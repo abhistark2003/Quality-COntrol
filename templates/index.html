@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Material Detection and Quality Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1><b>Quality Control System</b>
+        <br>Upload Weighslip</h1>
+        <img src="/static/logo.jpg" alt="Logo" class="logo">
+    </div>
+    <h2>Upload Weighslip</h2>
+    
+    <form method="post" enctype="multipart/form-data">
+        <div class="plant-select">
+            <label for="plant">Select Plant:</label>
+            <select id="plant" name="plant" required>
+                <option value="" disabled selected>Select a plant</option>
+                {% for plant in plants %}
+                    <option value="{{ plant }}">{{ plant }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <input type="file" name="pdfs" required>
+        <input type="submit" value="Upload and Extract">
+    </form>
+    <button onclick="resetAll()">Reset All</button>
+    {% if rows %}
+        <h3>Extracted Data</h3>
+        <table>
+            <tr>
+                <th>PDF</th>
+                <th>Page</th>
+                <th>Item Name</th>
+                <th>In Date</th>
+                <th>In Time</th>
+                <th>Vendor Name</th>
+                <th>PO Number</th>
+                <th>Select Image</th>
+                <th>Preview</th>
+                <th>Detection</th>
+            </tr>
+            {% for entry in rows %}
+                {% set r = entry.row %}
+                <tr>
+                    <td>{{ r[1] }}</td>
+                    <td>{{ r[2] }}</td>
+                    <td>{{ r[3] or '-' }}</td>
+                    <td>{{ r[4] or '-' }}</td>
+                    <td>{{ r[5] or '-' }}</td>
+                    <td>{{ r[6] or '-' }}</td>
+                    <td>{{ r[7] or '-' }}</td>
+                    <td>
+                        {% if entry.images %}
+                            <select onchange="changeImage('{{ r[0] }}', this.value)">
+                                {% for img in entry.images %}
+                                    <option value="{{ img }}">Image {{ loop.index }}</option>
+                                {% endfor %}
+                            </select>
+                        {% else %}
+                            No Images
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if entry.images %}
+                            <img id="img_{{ r[0] }}" src="data:image/png;base64,{{ entry.images[0] }}" width="100">
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                    <td>
+                        <button onclick="runDetection('{{ r[0] }}')">Detect</button>
+                        <div id="detect_{{ r[0] }}" style="margin-top: 5px; font-weight: bold;"></div>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No data extracted yet. Please upload a PDF.</p>
+    {% endif %}
+    <script>
+        function changeImage(id, base64) {
+            document.getElementById('img_' + id).src = 'data:image/png;base64,' + base64;
+        }
+        function resetAll() {
+            fetch('/reset', { method: 'POST' })
+                .then(res => {
+                    if (res.ok) window.location.href = '/';
+                    else alert('Reset failed');
+                });
+        }
+        function runDetection(id) {
+            const img = document.getElementById('img_' + id);
+            const base64 = img.src.split(',')[1];
+            fetch('/detect', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: 'image=' + encodeURIComponent(base64)
+            })
+            .then(res => res.json())
+            .then(data => {
+                const labels = data.labels.length ? data.labels.join(', ') : 'No materials detected';
+                document.getElementById('detect_' + id).innerHTML = 'Material detected: <b>' + labels + '</b>';
+            });
+        }
+    </script>
+</body>
+</html>
