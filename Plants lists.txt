@@ -1,0 +1,156 @@
+
+AY1-Ayodhya-UP
+B11-Bangalore- Hegde Nagar
+B12-Bangalore-Anjanapura
+B13-Bangalore-Devanahalli
+B14-Bangalore-Doddaballapur
+B15-Bangalore-Kalpataru Captive
+B16-Hosur
+B17-Bangalore-Lodha Captive
+B18-Bangalore-Bagluru
+BG2-Banglore - Mysore Road
+BG3-Banglore- Veerasandra
+BG4-Banglore- Yalahanka
+BG5-Banglore- Budhigire
+BG6-Bangalore- Pennya
+BG8-Banglore-8
+BG9-Bangalore-Whitefield
+BH1-Bhopal-Dipdi
+BH2-Bhopal-Mungaliya
+BL1-Bhilai-BHEL
+BU1-Bhubaneswar1-Pahal
+BU2-Bhubaneswar-North
+C11-Chennai - Trisulam
+CH1-Chennai- Poonamallee
+CH2-Chennai- Medavakam
+CH3-Chennai- Oragadam
+CH5-Chennai- Zoho
+CH6-Chennai- Madhavaram
+CH7-Chennai-Ambattur
+CH8-Chennai-Thirumudivakkam
+CH9-Chennai-Pudupakkam
+CM1-Coimbatore-1
+CM2-Coimbatore – Saravanampatti
+COR-Corporate Office Mumbai
+CT1-Cuttack-GDCL
+CT2-Cuttack-Jagatpur
+DE1-Derabassi-Punjab
+DL1-Delhi-Ranikhera
+DL2-Delhi-Aerocity
+DL3-Delhi-Ghevra
+DU1-Durg-Chhattisgarh
+FK1-FARAKKA-GDCL
+FR1-Faridabad
+FR2-Faridabad-Mathura Road
+GJ1-Gujarat Mundra-ITD
+GK1-Gorakhpur-UP
+GN1-Greater Noida-1
+GN2-Greater Noida-Gautam Buddha Nagar
+GO1-Goa-Ponda
+GO2-Goa-Navelim
+GO3-Goa-Verna South
+GU1-Gurgaon Ghata
+GU2-Gurgaon-Kherki
+GU3-Gurgaon-Badhshahpur
+GU4-Gurgaon-Shikohpur
+GU5-Gurugram-M3M
+GU6-Gurgaon-Classic Engineers
+GW1-Guwahati-Assam
+H10-Hyderabad- Kollur
+H11-Sitamma Sagar- L&T
+H12-Hyderabad-Vasavi Narsing
+H13-Hyderabad-UIC Sattva
+H14-Hyderabad-LB Nagar
+H15-Hyderabad Kalpataru Captive
+HA1-Hazira Tata-Gujarat
+HY1-Hyderabad- Bachupally
+HY2-Hyderabad- Medchal
+HY3-Hyderabad- Khanapur
+HY4-Hyderabad-Uppal Nacharam
+HY5-Hyderabad-Madhapur
+HY6-Hyderabad - Tellapur
+HY7-Hyderabad - Thukkuguda
+HY8-Hyderabad - Patancheru
+IN2-Indore-Bardari
+JA1-Jammu-Kashmir
+JJ4-Jaipur GDCL
+JJ6-Jaipur-KEC
+JK1-Jammu-Kashmir
+JP2-Jaipur-Bhankrota
+JS1-Jamshedpur
+KA1-Karjat-Training Center
+KH1-Khalapur-Maharashtra
+KK1-Kozhikode-Elathur
+KL2-Kolkata- Rajarhat
+KL3-Kolkata-Howrah
+KL4-Kolkata-Taratala
+KL5-Hooghly-1
+KO1-Kochi-Edayar
+KO2-Kochi-Ambalamugal
+KT1-Kottayam - Nattakom
+LA1-Lanka-Dalmia Assam
+LN1-Lucknow-Bijnor
+LU1-Ludhiana
+M10-Mumbai - Turbhe
+M11-Mumbai - Kashimira
+M12-Mumbai - Kharghar
+M13-Mumbai-Oberoi Realty
+M14-Dighi-Adani Port
+M15-Mumbai-Sital Baug
+M16-Mumbai-Kalyan Godrej Properties
+M17-Mumbai K Raheja-Worli
+M18-Taloja-Panvel
+M19-Sambhajinagar
+M20-Mumbai Vikhroli ( Lodha )
+MG1-Mangalore 1
+ML1-Mohali
+MU1-Mumbai-Mira Road
+MU5-Mumbai - Dombivali
+MU6-Mumbai-Mankoli
+MU7-Mumbai - Sakinaka
+MU8-Mumbai-HCC Worli
+MU9-Mumbai-Deonar
+MW1-Ambuja-Mundwa Project
+NA1-Nagpur- Higna Road
+NA2-Nagpur-Wardha
+NS1-Navsari-L&T
+NW1-Nawalgarh - Shree Cement
+PA2-Patna BHEL
+PA3-Patna-Makhdumpur
+PG1-Panagarh-1
+PU1-Pune- Hadapsar
+PU2-Pune- Hinjewadi
+PU3-Pune- Punawale
+PU4-Pune- Tata Project
+PU5-Pune- Vadgaon
+PU6-Pune-ElevatedMetro
+PU7-Pune-Sinhgarh
+PU8-PUNE LODHA CAPTIVE
+RA1-Raipur-Serikhedi
+RA2-Raipur-Gogaon
+RA3-Ranchi-Nagiri
+RJ1-Rajasthan-Barmer
+RN1-Ranchi-Nagiri
+SA1-Satna-KEC
+SD1-BHEL Sagardighi
+SO1-Haryana-Sonipat
+SR1-Surat - Gulermak
+SR2-Surat-Ichhapore
+SR3-Surat-L&T Mohini
+SR4-Surat-L&T CH 290
+SR5-Surat-Hazira ITD
+SR6-Surat- Sachin
+TA1-TALCHER
+TA2-Talcher-BHEL
+TA3-Talcher-Teknow Overseas
+TR1-Thrissur-Velakkode
+TR2-Thrissur-Guruvayur
+TR2-Thrissur - Guruvayur
+TV1-Thiruvananthapuram-Sasthavattom
+TV2-Thiruvananthapuram-Russelpuram
+TV3-Thiruvananthapuram -Starcon Infra
+TY1-TRICHY
+UM1-Umrangshu-Assam
+VA1-Vadodara- L&T
+VA2-Vadodra-Dumad
+C13-Chennai Captive Asia
