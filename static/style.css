@@ -1,0 +1,95 @@
+body {
+    background: #f6fff8;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 90px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,128,0,0.08);
+    background: #fff;
+    padding: 6px 10px;
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,128,0,0.08);
+}
+
+th, td {
+    border: 1px solid #b2f2bb;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #38b000;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #e9ffe7;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+img {
+    border: 1px solid #b2f2bb;
+    border-radius: 6px;
+}
+
+button, input[type="submit"] {
+    background: #38b000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #008000;
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(56,176,0,0.18);
+}
+
+select, input[type="file"] {
+    border: 1px solid #b2f2bb;
+    border-radius: 4px;
+    padding: 6px;
+    background: #fff;
+}
+
+.plant-select {
+    margin: 18px 0 18px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.plant-select label {
+    font-weight: 500;
+    color: #38b000;
+    font-size: 1.08em;
+}
+.plant-select select {
+    min-width: 260px;
+    font-size: 1em;
+}
